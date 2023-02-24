@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.inner-Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-card {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  width: 350px;
+  height: 435px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.result-heading {
+  color: white;
+  font-weight: 500;
+  opacity: 0.7;
+  margin-top: 30px;
+}
+
+.circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0.2)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
+.circle h1 {
+  color: white;
+  font-weight: 800;
+  font-size: 55px;
+}
+
+.circle p {
+  font-size: 15px;
+  color: white;
+  opacity: 0.6;
+  font-weight: 500;
+}
+
+.performace-text {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.note {
+  text-align: center;
+  width: 230px;
+  color: white;
+  opacity: 0.6;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.right-card {
+  margin-left: -60px;
+  background: white;
+  width: 350px;
+  height: 435px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: -1;
+  box-shadow: 10px 10px 150px 10px whitesmoke;
+}
+
+.card-container {
+  margin-left: 60px;
+  width: 70%;
+  height: 100%;
+}
+
+.summary-heading {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.grades-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 22px;
+}
+
+.grades-container div {
+  margin: 8px 0;
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+  height: 50px;
+  width: 240px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reaction div,
+.memory div,
+.verbal div,
+.visual div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.reaction {
+  background: hsl(0, 100%, 67%, 0.1);
+}
+
+.memory {
+  background: hsl(39, 100%, 56%, 0.1);
+}
+
+.verbal {
+  background: hsl(166, 100%, 37%, 0.1);
+}
+
+.visual {
+  background: hsl(234, 85%, 45%, 0.1);
+}
+
+.reaction .skill-heading {
+  color: hsl(0, 100%, 67%);
+  margin-left: 8px;
+}
+.memory .skill-heading {
+  color: hsl(39, 100%, 56%);
+  margin-left: 8px;
+}
+.verbal .skill-heading {
+  color: hsl(166, 100%, 37%);
+  margin-left: 8px;
+}
+.visual .skill-heading {
+  color: hsl(234, 85%, 45%);
+  margin-left: 8px;
+}
+
+.skill-heading {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.skill-logo {
+  width: 18px;
+}
+
+.score {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+  font-size: 15px;
+  margin-right: 15px;
+}
+
+.score span {
+  opacity: 0.2;
+}
+
+.continue-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.continue-button {
+  cursor: pointer;
+  width: 250px;
+  height: 45px;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  background: hsl(224, 30%, 27%);
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all 0.5s;
+  z-index: 10;
+}
+
+.continue-button:hover {
+  background: hsl(241, 81%, 54%);
+}
+
+@media screen and (max-width: 375px) {
+  .inner-Wrapper {
+    flex-direction: column;
+  }
+  .left-card {
+    width: 380px;
+    height: 470px;
+    border-radius: 40px;
+  }
+  .right-card {
+    width: 300px;
+    margin-left: 0;
+    margin-right: 0;
+    box-shadow: none;
+  }
+  .card-container {
+    width: 100%;
+    height: 100%;
+  }
+  .grades-container {
+    width: 80%;
+  }
+  .reaction,
+  .memory,
+  .verbal,
+  .visual {
+    width: 300px;
+  }
+  .summary-heading {
+    width: 80%;
+  }
+  .continue-button-container {
+    width: 80%;
+  }
+}
